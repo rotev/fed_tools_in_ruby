@@ -1,0 +1,208 @@
+body {
+	background: #0a0a0a;
+	color: #f3f3f3;
+
+	code {
+		color: #f3f3f3;
+		border: 1px solid #111;
+		padding: 1em;
+		display: inline-block;
+		float: left;
+		margin-right: 2em;
+		font-size: 150%;
+	}
+
+	blockquote {
+		display: none;
+	}
+}
+
+p, li {
+	color: #f3f3f3;
+	font-size: 30px;
+	line-height: 150%;
+}
+
+div.slide {
+	background: #000;
+
+	img {
+		float: left;
+	}
+}
+
+.slide.future, .slide.past {
+	opacity: 0;
+}
+
+h1 {
+	color: #f3f3f3;
+	padding: 0.3em 0.5em !important;
+	letter-spacing: 0.05em;
+}
+
+h2 {
+	color: #888;
+	font-size: 150%;
+	font-weight: normal;
+	letter-spacing: 0.2em;
+}
+
+section {
+	padding-top: 2em;
+}
+
+section p {
+
+	em {
+		font-style: normal;
+	}
+}
+
+section p:only-child {
+	color: #f3f3f3;
+	font-size: 3em;
+}
+
+.slides .slide-wrapper:first-child {
+
+	h1 {
+		font-size: 50px;	
+		color: #f3f3f3;
+	}
+}
+
+.intro, .outro {
+	h1 {
+		color: #aaa;
+		background-color: #111;
+	}
+
+	em {
+		color: #CBE86B;
+	}
+}
+
+.syntactic-sugar {
+	p {
+		font-size: 200% !important;
+		line-height: 150%;
+	}
+}
+
+.ruby {
+	h1 {
+		background-color: #7D0000;
+	}
+
+	.logo {
+		margin-bottom: 1em;
+	}
+
+	code {
+		float: right;
+		margin: 0;
+	}
+
+	&.first {
+		.matz {
+			float: left;
+			img { float: none; }
+		}
+
+		ul {
+			float: left;
+			margin-top: -10px;
+			margin-right: 5em;
+		}
+	}
+
+	&.examples {
+
+		pre {
+			text-align: center;
+
+			code {
+				float: none;
+				margin: auto;
+				text-align: left;
+			}
+		}
+	}
+
+	&.ecosystem {
+
+		p {
+			font-size: 300%;
+			line-height: 150%;
+		}
+
+		p.slide-id { display: none; }
+	}
+}
+
+.sass {
+	h1 {
+		background-color: #CE4DD6;
+	}
+
+	.logo {
+		float: left;
+	}
+
+	ul {
+		float: left;
+		margin-left: 3em;
+	}
+
+	&.nesting {
+
+	}
+
+	&.variables {
+		code {
+			font-size: 140%;
+		}
+	}
+}
+
+.template-engine {
+	p { font-size: 200% !important; }
+}
+
+.haml {
+	h1 {
+		background-color: #FF3836;
+	}
+
+	&.first {
+		ul {
+			float: left;
+			margin-left: 3em;
+		}
+	}
+
+	&.example {
+		code {
+			font-size: 130%;
+			margin-bottom: 1em;
+		}
+	}
+}
+
+.middleman {
+	h1 {
+		background-color: #002B36;
+	}
+
+	&.first {
+
+		ul { float: left; margin-left: 4em; margin-top: 0;  }
+
+		li { padding: 0; }
+	}
+
+	&.usage {
+		code { margin-bottom: 1em; font-size: 140% !important; }
+	}
+}

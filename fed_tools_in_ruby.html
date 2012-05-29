@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>FED tools <br> in the Ruby ecosystem</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="/usr/local/lib/python2.7/dist-packages/landslide/themes/default/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="/usr/local/lib/python2.7/dist-packages/landslide/themes/default/css/screen.css">
+    
+    
+      
+      <link rel="stylesheet" href="dark.css">
+      
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="/usr/local/lib/python2.7/dist-packages/landslide/themes/default/js/slides.js"></script>
+    
+    
+      
+      <script type="text/javascript" src="jquery.min.js"></script>
+      
+    
+      
+      <script type="text/javascript" src="landslide.js"></script>
+      
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div id="blank"></div>
+  <div class="presentation">
+    <div id="current_presenter_notes">
+      <div id="presenter_note"></div>
+    </div>
+    <div class="slides">
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>FED tools <br> in the Ruby ecosystem</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              1/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Overview</h1></header>
+            
+            
+            <section><p data-class="intro" class="slide-id"></p>
+
+<ul>
+<li>What is Ruby</li>
+<li>Great tools for FED:<ol>
+<li>Sass</li>
+<li>Haml</li>
+<li>Middleman</li>
+</ol>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              2/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Ruby</h1></header>
+            
+            
+            <section><p data-class="ruby" class="slide-id"></p>
+
+<p data-class="first" class="slide-id"></p>
+
+<ul>
+<li>Programming language</li>
+<li>Released 1995</li>
+<li>Yukihiro Matsumoto (Matz)</li>
+<li>Making programmers happy</li>
+<li>User experience focued</li>
+<li>Leads to productivity and fun</li>
+</ul>
+<div class="matz"><img src="matz.jpg" /></div></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              3/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Examples</h1></header>
+            
+            
+            <section><p data-class="ruby examples" class="slide-id"></p>
+
+<pre><code>"Jimmy".reverse  ➟ ymmiJ
+</code></pre>
+<blockquote>
+<p>hi</p>
+</blockquote>
+<pre><code>5.times { print "Odelay!" }
+
+➟ Odelay!Odelay!Odelay!Odelay!Odelay!
+</code></pre>
+<!-- <div class="logo" style="display:none; background: white; padding: 1em; display: inline-block; float: left;"><img src="ruby.gif" /></div> --></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Ecosystem</h1></header>
+            
+            
+            <section><p data-class="ruby ecosystem" class="slide-id"></p>
+
+<p>Tools in the spirit of its philosophy</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Syntactic sugar</h1></header>
+            
+            
+            <section><p data-class="intro" class="slide-id"></p>
+
+<p data-class="syntactic-sugar" class="slide-id"></p>
+
+<p><em>syntax</em> within a <em>programming language</em> that is designed to <br />
+make things <em>easier</em> to read or to express.</p>
+<pre><code>5.times { print "Odelay!" }
+
+↓
+
+for (int i = 0; i &lt; 5; i++) {
+    print "Odelay!";
+}
+</code></pre>
+<p style="clear:both; padding-top: 1em;">"5.times" is native, simple & clean</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Sass</h1></header>
+            
+            
+            <section><p data-class="sass" class="slide-id"></p>
+
+<div class="logo"><img src="sass.gif" /></div>
+
+<ul>
+<li>Ruby is fun! so should CSS be</li>
+<li>Variety of syntactic sugars for CSS</li>
+<li>Compiles to standard CSS</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Nesting</h1></header>
+            
+            
+            <section><p data-class="sass" class="slide-id"></p>
+
+<p data-class="nesting" class="slide-id"></p>
+
+<pre><code>/* SCSS */
+
+table {
+  td {
+    padding: 1em;
+  }
+}
+</code></pre>
+<blockquote>
+<p>hi </p>
+</blockquote>
+<pre><code>/* CSS */
+
+table td {
+  padding: 1em;
+}
+</code></pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              8/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Variables</h1></header>
+            
+            
+            <section><p data-class="sass" class="slide-id"></p>
+
+<p data-class="variables" class="slide-id"></p>
+
+<pre><code>/* SCSS */
+
+$blue: #0000FF;
+
+a {
+  color: $blue;
+}
+</code></pre>
+<blockquote>
+<p>hi </p>
+</blockquote>
+<pre><code>/* CSS */
+
+a {
+  color: #0000FF;
+}
+</code></pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>And more</h1></header>
+            
+            
+            <section><p data-class="sass more" class="slide-id"></p>
+
+<ul>
+<li>functions</li>
+<li>loops</li>
+<li>conditions</li>
+<li>...</li>
+</ul>
+<p style="clear: both; padding-top: 2em; font-size: 150% !important;">Developing with Sass is more powerful and clean.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              10/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>(web) Template Engine</h1></header>
+            
+            
+            <section><p data-class="intro template-engine" class="slide-id"></p>
+
+<p>Software that is designed to process web <em>templates</em> and <em>content</em> information to produce output web <em>documents</em>.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Haml</h1></header>
+            
+            
+            <section><p data-class="haml first" class="slide-id"></p>
+
+<p><img src="haml.gif" /></p>
+<ul>
+<li>Syntactic sugars for HTML</li>
+<li>Template Engine for Ruby on Rails</li>
+<li>"Markup should be beautiful"</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              12/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Example</h1></header>
+            
+            
+            <section><p data-class="haml example" class="slide-id"></p>
+
+<pre><code>#profile
+    .left.column
+        #date= print_date
+        #address= current_user.address
+    .right.column
+        #email= current_user.email
+        #bio= current_user.bio
+</code></pre>
+<blockquote>
+<p>hi</p>
+</blockquote>
+<pre><code>&lt;div id="profile"&gt;
+  &lt;div class="left column"&gt;
+    &lt;div id="date"&gt;&lt;%= print_date %&gt;&lt;/div&gt;
+    &lt;div id="address"&gt;&lt;%= current_user.address %&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="right column"&gt;
+    &lt;div id="email"&gt;&lt;%= current_user.email %&gt;&lt;/div&gt;
+    &lt;div id="bio"&gt;&lt;%= current_user.bio %&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              13/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Middleman</h1></header>
+            
+            
+            <section><p data-class="middleman first" class="slide-id"></p>
+
+<p><img src="middleman.png" /></p>
+<ul>
+<li>command-line tool</li>
+<li>static websites</li>
+<li>modern tools<ol>
+<li>Sass, Haml</li>
+<li>Templates, Layouts &amp; Partials</li>
+<li>CoffeeScript, Compass</li>
+<li>Frontend Optimization,...</li>
+</ol>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              14/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Usage</h1></header>
+            
+            
+            <section><p data-class="middleman usage" class="slide-id"></p>
+
+<pre><code>$ middleman init my_project
+$ cd my_project
+</code></pre>
+<blockquote>
+<p>hi</p>
+</blockquote>
+<pre><code>$ middleman server
+&gt;&gt; Listening on localhost:4567, CTRL+C to stop
+</code></pre>
+<p style="clear: both; padding-top: 2em;">and we can start using these great tools</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>We talked about...</h1></header>
+            
+            
+            <section><p data-class="outro summary" class="slide-id"></p>
+
+<ul>
+<li>Why Ruby is awsome</li>
+<li>Sass</li>
+<li>Haml</li>
+<li>Middleman</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              16/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: index.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>The End</h1></header>
+            
+            
+            <section><p data-class="outro thankyou" class="slide-id"></p>
+
+<ul>
+<li>by Rotem Harel</li>
+<li>Presentation created with <a href="https://github.com/n1k0/landslide">landslide</a></li>
+<li>Thank you!</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="index.md">index.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              17/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+      
+      <tr id="toc-row-1">
+        <th><a href="#slide1">FED tools <br> in the Ruby ecosystem</a></th>
+        <td><a href="#slide1">1</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-2">
+        <th><a href="#slide2">Overview</a></th>
+        <td><a href="#slide2">2</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide3">Ruby</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-4">
+        <th><a href="#slide4">Examples</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-5">
+        <th><a href="#slide5">Ecosystem</a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-6">
+        <th><a href="#slide6">Syntactic sugar</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-7">
+        <th><a href="#slide7">Sass</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-8">
+        <th><a href="#slide8">Nesting</a></th>
+        <td><a href="#slide8">8</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-9">
+        <th><a href="#slide9">Variables</a></th>
+        <td><a href="#slide9">9</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-10">
+        <th><a href="#slide10">And more</a></th>
+        <td><a href="#slide10">10</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-11">
+        <th><a href="#slide11">(web) Template Engine</a></th>
+        <td><a href="#slide11">11</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-12">
+        <th><a href="#slide12">Haml</a></th>
+        <td><a href="#slide12">12</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-13">
+        <th><a href="#slide13">Example</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-14">
+        <th><a href="#slide14">Middleman</a></th>
+        <td><a href="#slide14">14</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-15">
+        <th><a href="#slide15">Usage</a></th>
+        <td><a href="#slide15">15</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-16">
+        <th><a href="#slide16">We talked about...</a></th>
+        <td><a href="#slide16">16</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-17">
+        <th><a href="#slide17">The End</a></th>
+        <td><a href="#slide17">17</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Exposé</th>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <th>Full screen slides</th>
+        <td>e</td>
+      </tr>
+      <tr>
+        <th>Presenter View</th>
+        <td>p</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Toggle screen blanking</th>
+        <td>b</td>
+      </tr>
+      <tr>
+        <th>Show/hide slide context</th>
+        <td>c</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+  </div>
+  <script>main()</script>
+</body>
+</html>
